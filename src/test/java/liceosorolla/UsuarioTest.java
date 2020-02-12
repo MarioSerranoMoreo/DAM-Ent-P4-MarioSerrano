@@ -13,5 +13,8 @@ public class UsuarioTest {
 	public void Before() {
 		usuario = new Usuario("Mario","Serrano Moreo", "2020-02-12", 7);
 	}
-	
+	@Test
+	public void comprobarNombre() {
+		assertEquals("Mario", usuario.getNombre());
+	}
 }
