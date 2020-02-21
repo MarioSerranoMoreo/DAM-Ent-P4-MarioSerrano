@@ -2,6 +2,8 @@ package test.java.liceosorolla;
 
 import static org.junit.Assert.assertEquals;
 
+import java.time.LocalDate;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +13,7 @@ public class UsuarioTest {
 	private Usuario usuario;
 	@Before
 	public void Before() {
-		usuario = new Usuario("Mario","Serrano Moreo", "2020-02-12", 7);
+		usuario = new Usuario("Mario","Serrano Moreo", 7, LocalDate.of(2000, 07, 05));
 	}
 	@Test
 	public void comprobarNombre() {
@@ -24,5 +26,9 @@ public class UsuarioTest {
 	@Test
 	public void comprobarNombreCompleto() {
 		assertEquals("Mario Serrano Moreo", usuario.getNombre()+" "+usuario.getApellidos());
+	}
+	@Test
+	public void comprobarMayoriaDeEdad() {
+		assertEquals(true,usuario.mayoriaEdad());
 	}
 }
