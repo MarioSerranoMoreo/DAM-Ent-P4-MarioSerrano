@@ -31,4 +31,8 @@ public class UsuarioTest {
 	public void comprobarMayoriaDeEdad() {
 		assertEquals(true,usuario.mayoriaEdad());
 	}
+	@Test
+	public void comprobarIdentificador() {
+		assertEquals(7,usuario.getIdentificador());
+	}
 }
