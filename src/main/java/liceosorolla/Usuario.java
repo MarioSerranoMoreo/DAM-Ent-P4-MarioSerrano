@@ -1,6 +1,7 @@
 package main.java.liceosorolla;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.time.Year;
 
 public class Usuario {
@@ -50,7 +51,9 @@ public class Usuario {
 	
 	public boolean mayoriaEdad() {
 		boolean bool=true;
-		bool=18<Year.now().getValue()-fecha.getYear();
+		LocalDate ahora = LocalDate.now();
+		Period periodo = Period.between(fecha, ahora);
+		bool=18<periodo.getYears();
 		return bool;
 	}
 }
