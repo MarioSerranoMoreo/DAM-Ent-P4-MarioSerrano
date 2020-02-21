@@ -2,7 +2,6 @@ package main.java.liceosorolla;
 
 import java.time.LocalDate;
 import java.time.Year;
-import java.util.Calendar;
 
 public class Usuario {
 	private String nombre;
