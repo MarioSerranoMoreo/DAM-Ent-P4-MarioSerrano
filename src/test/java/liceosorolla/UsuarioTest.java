@@ -39,4 +39,8 @@ public class UsuarioTest {
 	public void comprobarNombreMayusculas() {
 		assertEquals("MARIO",usuario.getNombre().toUpperCase());
 	}
+	@Test
+	public void comprobarNombreMinusculas() {
+		assertEquals("mario",usuario.getNombre().toLowerCase());
+	}
 }
