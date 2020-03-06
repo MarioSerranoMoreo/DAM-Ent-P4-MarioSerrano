@@ -1,5 +1,24 @@
 package test.java.liceosorolla;
 
-public class RectanguloTest {
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Before;
+import org.junit.Test;
+import main.java.liceosorolla.Rectangulo;
+
+public class RectanguloTest {
+	private Rectangulo rectangulo;
+	
+	@Before
+	public void Before() {
+		rectangulo = new Rectangulo(6,9);
+	}
+	
+	@Test
+	public void comprobarLados() {
+		boolean comprobar=false;
+		assertEquals(comprobar,rectangulo.esCuadrado());
+	}
+	
+	
 }
