@@ -20,5 +20,10 @@ public class RectanguloTest {
 		assertEquals(comprobar,rectangulo.esCuadrado());
 	}
 	
+	@Test
+	public void comprobarPerimetro() {
+		assertEquals(30,rectangulo.perimetro());
+	}
+	
 	
 }
