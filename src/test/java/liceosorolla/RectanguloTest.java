@@ -30,5 +30,10 @@ public class RectanguloTest {
 		assertEquals(54,rectangulo.area());
 	}
 	
+	@Test
+	public void comprobarHipotenusa() {
+		assertEquals(10,rectangulo.hipotenusa());
+	}
+	
 	
 }
