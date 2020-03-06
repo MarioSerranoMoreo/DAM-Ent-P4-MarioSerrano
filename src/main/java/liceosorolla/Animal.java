@@ -45,4 +45,5 @@ public class Animal {
 	public void setColorPelo(String colorPelo) {
 		this.colorPelo = colorPelo;
 	}
+	
 }
