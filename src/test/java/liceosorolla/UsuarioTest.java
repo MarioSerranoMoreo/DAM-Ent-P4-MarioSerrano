@@ -43,4 +43,12 @@ public class UsuarioTest {
 	public void comprobarNombreMinusculas() {
 		assertEquals("mario",usuario.getNombre().toLowerCase());
 	}
+	@Test
+	public void comprobarNombreApellidosMayus() {
+		assertEquals("MARIO SERRANO MOREO",usuario.nombreApellidosMayus());
+	}
+	@Test
+	public void comprobarNombreApellidosMinus() {
+		assertEquals("mario serrano moreo",usuario.nombreApellidosMinus());
+	}
 }
